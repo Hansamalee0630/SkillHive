@@ -1,56 +1,122 @@
+# 🚀 SkillHive
 
-  <h1>🚀 SkillHive</h1>
-  <p><strong>Role:</strong> Full-Stack Developer · Product Designer · Data Architect · Team Leader</p>
+_Built a full-stack web app designed to empower users to learn and teach new skills through structured roadmaps, community engagement, and real-time interactions._
 
-  <p><em>SkillHive is a collaborative learning platform where users can learn, teach, and share knowledge through structured roadmaps and interactive community tools.</em></p>
+> Think **Skillshare + Notion + LinkedIn** but made for next-gen learners and creators. 🌱🚀
 
-  <img src="MacBook Pro 14_ - 1.png" alt="SkillHive Landing Page Screenshot"/>
+---
 
-  <h2>🌟 Key Features</h2>
-  <ul>
-    <li><strong>📚 Learning Roadmaps:</strong> Guided learning paths with progress tracking.</li>
-    <li><strong>👥 Community-Powered:</strong> Share, endorse, and review resources.</li>
-    <li><strong>🧑‍🏫 Role-Based Access:</strong> Custom flows for learners, contributors, and admins.</li>
-    <li><strong>🔐 Authentication:</strong> Clerk social login + JWT-secured backend.</li>
-    <li><strong>🔔 Real-Time Notifications:</strong> Live alerts for feedback and roadmap updates.</li>
-    <li><strong>💬 Social Tools:</strong> Comments, upvotes, and follows to drive collaboration.</li>
-  </ul>
+## 👩‍💻 My Role & Learnings
+**Full-Stack Developer · Product Designer · Data Architect · Team Leader**
 
-  <img src="images/skillhive-roadmap.png" alt="Roadmap View Screenshot"/>
+- Architected both frontend and backend from the ground up  
+- Led the team in feature planning, task delegation, and collaborative coding  
+- Mastered REST API design and real-time interaction logic  
+- Balanced clean, scalable code with intuitive, user-centered design  
+- Gained deep insight into scalable architecture and auth workflows 
+---
 
-  <h2>🛠️ Tech Stack</h2>
-  <ul>
-    <li><strong>Frontend:</strong> React, Tailwind CSS, Clerk Auth</li>
-    <li><strong>Backend:</strong> Spring Boot, PostgreSQL, JWT</li>
-    <li><strong>Infrastructure:</strong> REST API, Modular Architecture, Real-Time Data</li>
-  </ul>
+## 🚀 Key Highlights
 
-  <img src="images/skillhive-auth-flow.png" alt="Authentication Flow Diagram"/>
+- 📚 **Learning Roadmaps**: Structured skill paths with progress tracking  
+- 👥 **Community-Driven**: Endorsements, reviews, and shared resources  
+- 🧑‍🏫 **Role-Based Access**: Tailored user flows for learners, contributors, and admins  
+- 🔐 **Seamless Auth**: Social login via Clerk + secure backend JWT  
+- 🔔 **Real-Time Notifications**: Live alerts for comments, feedback, and updates  
+- 💬 **Social Features**: Follows, upvotes, and comments to foster engagement   
 
-  <h2>💡 My Contributions</h2>
-  <ul>
-    <li>Designed and built the full-stack architecture from scratch.</li>
-    <li>Implemented RESTful API services and integrated real-time features.</li>
-    <li>Managed project roadmap, led a small team, and coordinated feature development.</li>
-    <li>Balanced clean, scalable code with user-centered UI/UX design principles.</li>
-  </ul>
+---
 
-  <h2>🎯 Impact</h2>
-  <p>
-    SkillHive is designed to empower self-driven learners and creators by combining structure, social interaction, and collaborative tools. It promotes an open-learning culture where users are both students and teachers.
-  </p>
+## 🌟 Impact
 
-  <h2>✅ Skills & Tools</h2>
-  <p>
-    React · JavaScript · Spring Boot · PostgreSQL · Tailwind CSS · JWT · REST APIs · Full-Stack Development · Clerk Authentication · Git · UI/UX Design · Software Architecture · Agile Workflow · Team Collaboration
-  </p>
+**SkillHive** supports both **self-paced learning** and **collaborative growth**, fostering an open-learning culture driven by **community-powered content** and meaningful **peer interaction**.
 
-  <h3>📸 Additional Screenshots</h3>
-  <img src="images/skillhive-dashboard.png" alt="User Dashboard"/>
-  <img src="images/skillhive-comments.png" alt="Comments and Interactions"/>
+---
 
-  <p><em>“The future belongs to those who build it. Keep showing up and leveling up.” ✨</em></p>
+## 📸 Screenshots
 
-</body>
-</html>
+### 🔹 Landing Page  
+![Landing Page](Landing.png)
 
+### 🔹 Tech Stack  
+![Roadmap View](Architecture.png)
+
+- **Frontend**: React, Tailwind CSS, Clerk Authentication  
+- **Backend**: Spring Boot, MongoDB, JWT  
+- **Infrastructure**: REST APIs, Modular Architecture, Real-Time UX Components  
+
+### 🔹 Auth Flow  
+![Auth Flow](Untitled.png)
+
+---
+
+## 🛠️ Getting Started
+
+Wanna run SkillHive locally and see the magic for yourself? Here's how you can set it up like a pro 👇
+
+### 🔃 1. Clone the Repository
+
+```bash
+git clone https://github.com/your-username/skillhive.git
+cd skillhive
+```
+### 🌐 2. Frontend Setup (React + Clerk)
+```bash
+cd frontend
+npm install
+```
+
+👉 Environment Setup (.env)
+Create a .env file in the frontend folder and add your Clerk keys:
+```env
+VITE_CLERK_PUBLISHABLE_KEY=your-clerk-pub-key
+VITE_BACKEND_URL=http://localhost:8080
+```
+
+Then run the dev server:
+
+```bash
+npm run dev
+```
+App will be live at: http://localhost:5173
+
+### ⚙️ 3. Backend Setup (Spring Boot + MongoDB)
+```bash
+cd ../backend
+./mvnw clean install
+```
+
+👉 Configure PostgreSQL DB
+Update your application.properties or application.yml with your DB credentials:
+
+```properties
+spring.datasource.url=jdbc:postgresql://localhost:5432/skillhive
+spring.datasource.username=your_username
+spring.datasource.password=your_password
+```
+Then run the backend:
+
+```bash
+./mvnw spring-boot:run
+```
+API will be available at: http://localhost:8080/api
+
+## 📦 API Overview
+- Auth: /api/auth/login, /api/auth/register
+- Users: /api/users, /api/users/{id}
+- Roadmaps: /api/roadmaps, /api/roadmaps/{id}
+- Comments/Interactions: /api/comments, /api/notifications
+
+You can explore the full API using Postman or Swagger if configured.
+
+### 🧪 4. Optional: Test Your Setup
+Sign up using Clerk (Google/GitHub)
+Create a roadmap
+Interact with comments & follow users
+Check notifications in real-time 🛎️
+
+## 🤝 Contributing
+Pull requests are welcome! If you have ideas, feedback, or bug fixes—open an issue or fork and PR away 🚀
+
+## 📄 License
+MIT — feel free to use, remix, and build your own SkillHive ✨
